@@ -1,20 +1,18 @@
 package com.kashif.hackerR;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Staircase {
 	   // Complete the staircase function below.
     static void staircase(int n) {
-    	String [][] staircase = new String[n][n];
-    	for(int i=0; i < n; i ++) {
-    		for(int j=0; j < n; j ++) {
-    			if(j == n - i)
-    			staircase[i][j] = " ";
-    		}
+    	StringBuilder hashes = new StringBuilder();
+    	for (int i=0; i < n; i ++) {
+    		hashes.append(" ");
     	}
-    	System.out.println(Arrays.deepToString(staircase));
-
+		for(int i = 0; i < n; i++) {
+    		hashes.replace(n - (i + 1), n - i, "#");
+			System.out.println(hashes);
+    	}
     }
 
     private static final Scanner scanner = new Scanner(System.in);

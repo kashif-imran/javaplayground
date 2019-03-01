@@ -1,14 +1,11 @@
 package com.kashif.json;
 import java.io.Serializable;
-import java.time.LocalDate;
-
-import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 
-public class EmpIdentitiesDTO implements Serializable {
-	/**
+public class EmpIdentitiesDTO implements Serializable {/*
+	*//**
 	 * 
-	 */
+	 *//*
 	private static final long serialVersionUID = 2633927946256256420L;
 
 	private int id;
@@ -132,4 +129,4 @@ public class EmpIdentitiesDTO implements Serializable {
 	public void setSource(String source) {
 		this.source = source;
 	}
-}
+*/}
