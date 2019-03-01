@@ -2,7 +2,12 @@ package com.kashif.json;
 import java.io.Serializable;
 
 
-public class EmpIdentitiesDTO implements Serializable {/*
+/*
+/*
+public class EmpIdentitiesDTO implements Serializable {
+	*//**
+	 * 
+	 *//*
 	*//**
 	 * 
 	 *//*
@@ -130,3 +135,4 @@ public class EmpIdentitiesDTO implements Serializable {/*
 		this.source = source;
 	}
 */}
+*/
