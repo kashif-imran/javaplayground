@@ -2,15 +2,11 @@ package com.kashif.hackerR;
 
 import java.util.Scanner;
 
-public class Staircase {
-	
-	
-	
-	
+public class Staircase {	
 	
 	   // Complete the staircase function below.
     static void staircaseUsingMatrix(int n) {
-    	StringBuilder hashes = new StringBuilder();
+    	String[][] staircase = new String[n][n];
     	int hashPosition = n- 1;    	
     	for(int i=0; i < n; i ++) {    	
     		for(int j=0; j < n; j ++) {
@@ -20,9 +16,6 @@ public class Staircase {
     			} else {
     				staircase[i][j] = " ";
     			}
-		for(int i = 0; i < n; i++) {
-    		hashes.replace(n - (i + 1), n - i, "#");
-			System.out.println(hashes);
     		}
     	}
     	printMatrix(staircase);
