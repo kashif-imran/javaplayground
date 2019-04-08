@@ -10,7 +10,7 @@ public class SockPair {
     // Complete the sockMerchant function below.
     static int sockMerchant(int n, int[] ar) {
 
-
+    	return 0;
     }
 
     private static final Scanner scanner = new Scanner(System.in);

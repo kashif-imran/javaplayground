@@ -3,7 +3,7 @@ package com.kashif.jool;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jooq.lambda.Seq;
+//import org.jooq.lambda.Seq;
 
 class Employee {
     int id;
@@ -48,9 +48,9 @@ public class Manager {
         rows.add(new Employee(1, "y"));
         rows.add(new Employee(1, "z"));
         
-        List<String> unique =  Seq.seq(rows).map(r -> r.getName()).distinct().toList();
+       // List<String> unique =  Seq.seq(rows).map(r -> r.getName()).distinct().toList();
         
-        System.out.println(unique);
+       // System.out.println(unique);
         
     }
 
