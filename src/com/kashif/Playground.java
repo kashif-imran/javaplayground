@@ -3,6 +3,7 @@ package com.kashif;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.UUID;
 
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
@@ -14,9 +15,7 @@ public class Playground {
 	private static ObjectMapper mapper = new ObjectMapper();
 	
 	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
-		JSONObject obj = new JSONObject();
-		obj.put("uri", "data-drive-aadhar/ffa61cdf-53eb-4b12-8328-f44c258fcf09");
-		System.out.println(Playground.objectToString(obj));
+		System.out.println(UUID.randomUUID().toString());
 	}
 
 	public static String objectToString(Object value) throws JsonGenerationException, JsonMappingException, IOException {
